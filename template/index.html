@@ -5,54 +5,379 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../static/css/styles.css">
-    <script src="../static/js/scripts.js"></script>
+    <script src="../static/js/script.js"></script>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="../static/css/offcanvas.css">
+    <link rel="stylesheet" href="../static/css/navbar.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <link rel="stylesheet" href="../static/css/video.css">
+    <link rel="stylesheet" href="../static/css/carrousel.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </head>
 <body>
     <!--Header-->
     <!--Navbar-->
 
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" aria-label="Main navigation">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Sustain 3D</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <div class="d-flex flex-column align-items-center text-center">
+            <img class="logo w-25" src="../static/img/logo_icon.png" alt="Sustain 3D">
+            <a class="navbar-brand" href="#">Sustain 3D</a>
+        </div>
+          <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav me-auto mb-2 mb-md-0">
-              <li class="nav-item">
+      
+          <div class="navbar-collapse offcanvas-collapse justify-content-between" id="navbarsExampleDefault">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
+              <li class="nav-item lead mx-3">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+              <li class="nav-item dropdown lead mx-3">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-bs-toggle="dropdown" aria-expanded="false">Future</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown02">
+                  <li><a class="dropdown-item lead d-flex align-items-center" href="#"> <i class="bi bi-trophy me-2"></i> Innovation</a></li>
+                  <li><a class="dropdown-item lead d-flex align-items-center" href="#"><i class="bi bi-droplet me-2"></i></i>Sustainability & ESG</a></li>
+                  <li><a class="dropdown-item lead d-flex align-items-center" href="#"> <i class="bi bi-newspaper me-2"></i>News</a></li>
+                </ul>
               </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              <li class="nav-item dropdown lead mx-3">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-bs-toggle="dropdown" aria-expanded="false">Products</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown02">
+                  <li><a class="dropdown-item lead d-flex align-items-center" href="#"><i class="bi bi-shop me-2"></i> Shop</a></li>
+                  <li><a class="dropdown-item lead d-flex align-items-center" href="#"><i class="bi bi-image me-2"></i>Gallery</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown lead mx-3">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown02">
+                  
+                  
+                  <li><a class="dropdown-item lead d-flex align-items-center" href="#"> <i class="bi bi-tree me-2"></i>Sustaniability Consultations</a></li>
+                  <li><a class="dropdown-item lead d-flex align-items-center" href="#"><i class="bi bi-badge-3d me-2"></i>Custom 3D Models</a></li>
+                  <li><a class="dropdown-item lead d-flex align-items-center" href="#"> <i class="bi bi-stars me-2 "></i>Plastic collection</a></li>
+
+                  <li><a class="dropdown-item lead d-flex align-items-center" href="#"><i class="bi bi-badge-3d-fill me-2"></i>3D Printing Service</a></li>
+                  <li><a class="dropdown-item lead d-flex align-items-center" href="#"><i class="bi bi-box2-heart me-3"></i>Donations</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown lead mx-3">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-bs-toggle="dropdown" aria-expanded="false">About us</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown02">
+                  <li><a class="dropdown-item lead d-flex align-items-center" href="#"><i class="bi bi-globe me-2"></i>Partnerships</a></li>
+                  <li><a class="dropdown-item lead d-flex align-items-center" href="#"><i class="bi bi-recycle me-2"></i>Sustain 3D Fundation</a></li>
+                  <li><a class="dropdown-item lead d-flex align-items-center" href="#"><i class="bi bi-text-paragraph me-2"></i>Politics</a></li>
+                  <li><a class="dropdown-item lead d-flex align-items-center" href="#"><i class="bi bi-cash-coin me-2"></i>Sponsors</a></li>
+                  <li><a class="dropdown-item lead d-flex align-items-center" href="#"><i class="bi bi-calendar3 me-2"></i>What's next?</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown lead mx-3">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-bs-toggle="dropdown" aria-expanded="false">Carrers</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown02">
+                  <li><a class="dropdown-item lead d-flex align-items-center" href="#"><i class="bi bi-binoculars me-2"></i></i>Search for jobs</a></li>
+                  <li><a class="dropdown-item lead d-flex align-items-center" href="#"><i class="bi bi-person-hearts me-2"></i>Work conditions</a></li>
+                  <li><a class="dropdown-item lead d-flex align-items-center" href="#"><i class="bi bi-person-vcard me-2"></i>Introduce yourself</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown lead mx-3">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Profile</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                  <li><a class="dropdown-item lead d-flex align-items-center" href="#"><i class="bi bi-door-open me-2"></i>Log in</a></li>
+                  <li><a class="dropdown-item lead d-flex align-items-center" href="#"><i class="bi bi-person-plus me-2"></i>Sign in</a></li>
+                  <li><a class="dropdown-item d-flex align-items-center" href="#"><i class="bi bi-text-left me-2"></i>Our plans and conditions</a></li>
+                </ul>
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
+            <form class="d-flex">
+              <input class="form-control me-2 d-none" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit"><i class="bi bi-search"></i></button>
             </form>
           </div>
         </div>
       </nav>
     <!--Main-->
         <!--HeroSection-->
+        <section>
+          <div id="myCarousel" class="carousel slide " data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner bg-dark">
+              <div class="carousel-item active">
+                <img src="../static/img/nick-fewings-ywVgG0lDbOk-unsplash.jpg" class="d-block w-100 opacity-50" alt="...">
+                <div class="container">
+                  <div class="carousel-caption text-center">
+                    <h1>Leading the Way in Sustainability and Environmental Care</h1>
+                    <p>We Collected Over 1 Million Tons of Plastic This Year — A Record-Breaking Achievement!</p>
+                    <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item bg-dark">
+                <img src="../static/img/prostetic-1273183_1920.jpg" class="d-block w-100 opacity-50" alt="...">
+                <div class="container">
+                  <div class="carousel-caption text-center">
+                    <h1>Innovation and Technology</h1>
+                    <p>See how we create very useful 3D objects from junk plastic</p>
+                    <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item bg-dark">
+                <img src="../static/img/tom-claes-XsXFYFcJ0-I-unsplash.jpg" class="d-block w-100 opacity-50" alt="...">
+                <div class="container">
+                  <div class="carousel-caption text-center">
+                    <h1>Our Factories</h1>
+                    <p>How and where we work in our sustainable factories</p>
+                    <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev w-25" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next w-25" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
         <!--Slogan-->
+
+        <section>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4">
+                <h2>Our Mission</h2>
+                <p>Our mission is to create a sustainable future for our planet by reducing plastic waste and creating new products from recycled materials.</p>
+                <p><a class="btn btn-secondary" href="#">Learn more</a></p>
+              </div>
+              <div class="col-lg-4">
+                <h2>Our Vision</h2>
+                <p>Our vision is to create a world where plastic waste is a thing of the past and where we can all live in harmony with nature.</p>
+                <p><a class="btn btn-secondary" href="#">Learn more</a></p>
+              </div>
+              <div class="col-lg-4">
+                <h2>Our Values</h2>
+                <p>Our values are sustainability, innovation, and community. We believe that by working together we can create a better future for all.</p>
+                <p><a class="btn btn-secondary" href="#">Learn more</a></p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--Video-->
+        <section>
+          <div class="container text-center">
+            <div class="video-container mx-auto">
+              <video autoplay loop muted playsinline>
+                <source src="../static/videos/mixkit-scientists-with-3d-printing-object-23614-hd-ready.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        </section>
         <!--AboutUs-->
+        <section id="about-us" class="py-5 bg-dark">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 text-light">
+                <h2>About Us</h2>
+                <p>We are a team of passionate individuals dedicated to making a positive impact on the environment. Our company was founded with the goal of reducing plastic waste and promoting sustainability through innovative solutions.</p>
+                <p>Our journey began with a simple idea: to transform plastic waste into valuable products. Over the years, we have developed cutting-edge technologies and processes that allow us to recycle plastic waste efficiently and effectively.</p>
+                <p>We believe that sustainability is not just a buzzword, but a way of life. We are committed to creating a better future for our planet and future generations.</p>
+              </div>
+              <div class="col-lg-6">
+                <img src="../static/img/about-us.jpg" class="img-fluid" alt="About Us">
+              </div>
+            </div>
+          </div>
+        </section>
         <!--Services-->
-        <!--Portfolio--->
-        <!--Section-->
-        <!--Contact-->
-        <!--Form-->
+<section id="services" class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100">
+          <img src="../static/img/service1.jpg" class="card-img-top" alt="Service 1">
+          <div class="card-body">
+            <h5 class="card-title">Sustainability Consultations</h5>
+            <p class="card-text">Our experts provide consultations to help your business become more sustainable and environmentally friendly.</p>
+            <a href="#" class="btn btn-primary">Learn more</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100">
+          <img src="../static/img/service2.jpg" class="card-img-top" alt="Service 2">
+          <div class="card-body">
+            <h5 class="card-title">Custom 3D Models</h5>
+            <p class="card-text">We create custom 3D models tailored to your specific needs using recycled materials.</p>
+            <a href="#" class="btn btn-primary">Learn more</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100">
+          <img src="../static/img/service3.jpg" class="card-img-top" alt="Service 3">
+          <div class="card-body">
+            <h5 class="card-title">Plastic Collection</h5>
+            <p class="card-text">We offer plastic collection services to help reduce waste and promote recycling in your community.</p>
+            <a href="#" class="btn btn-primary">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Portfolio-->
+<section id="portfolio" class="py-5 bg-dark">
+  <div class="container text-light">
+    <h2 class="text-center mb-5">Our Portfolio</h2>
+    <div class="row">
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100">
+          <img src="../static/img/portfolio1.jpg" class="card-img-top" alt="Portfolio 1">
+          <div class="card-body">
+            <h5 class="card-title">Project 1</h5>
+            <p class="card-text">Description of Project 1 showcasing our work in sustainability and innovation.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100">
+          <img src="../static/img/portfolio2.jpg" class="card-img-top" alt="Portfolio 2">
+          <div class="card-body">
+            <h5 class="card-title">Project 2</h5>
+            <p class="card-text">Description of Project 2 showcasing our work in sustainability and innovation.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100">
+          <img src="../static/img/portfolio3.jpg" class="card-img-top" alt="Portfolio 3">
+          <div class="card-body">
+            <h5 class="card-title">Project 3</h5>
+            <p class="card-text">Description of Project 3 showcasing our work in sustainability and innovation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Innovation-->
+<section id="innovation" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Innovation in Sustainability</h2>
+    <div class="row">
+      <div class="col-lg-6">
+        <p>We are constantly innovating to find new ways to reduce plastic waste and promote sustainability. Our latest projects include developing biodegradable materials and creating new products from recycled plastics.</p>
+        <p>Our team of experts is dedicated to researching and implementing the latest technologies to make a positive impact on the environment.</p>
+      </div>
+      <div class="col-lg-6">
+        <img src="../static/img/innovation.jpg" class="img-fluid" alt="Innovation">
+      </div>
+    </div>
+  </div>
+</section>
+<!--Contact-->
+<section id="contact" class="py-5 bg-dark">
+  <div class="container text-light">
+    <h2 class="text-center mb-5">Contact Us</h2>
+    <div class="row">
+      <div class="col-lg-6 mb-4">
+        <h5>Address</h5>
+        <p>123 Sustainability Street, Green City, Earth</p>
+        <h5>Email</h5>
+        <p><a href="mailto:info@sustain3d.com" class="text-light">info@sustain3d.com</a></p>
+        <h5>Phone</h5>
+        <p>+123 456 7890</p>
+      </div>
+      <div class="col-lg-6 mb-4">
+        <h5>Follow Us</h5>
+        <p>
+          <a href="#" class="text-light me-2"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-light me-2"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="text-light me-2"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-light"><i class="bi bi-linkedin"></i></a>
+        </p>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-lg-12">
+        <h5>Send Us a Message</h5>
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Image Licenses-->
+<section id="licenses" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5">Image Licenses</h2>
+    <ul>
+      <li>Image 1: <a href="https://unsplash.com/photos/ywVgG0lDbOk" target="_blank">Nick Fewings on Unsplash</a></li>
+      <li>Image 2: <a href="https://unsplash.com/photos/6QJ2-x0V1j0" target="_blank">Alexander Andrews on Unsplash</a></li>
+      <li>Image 3: <a href="https://unsplash.com/photos/XsXFYFcJ0-I" target="_blank">Tom Claes on Unsplash</a></li>
+      <!-- Add more image licenses as needed -->
+    </ul>
+  </div>
+</section>
+<!--Footer-->
+<footer class="bg-dark text-light py-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 mb-3">
+        <h5>Sustain 3D</h5>
+        <p>Leading the way in sustainability and environmental care.</p>
+      </div>
+      <div class="col-md-4 mb-3">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-light">Home</a></li>
+          <li><a href="#" class="text-light">About Us</a></li>
+          <li><a href="#" class="text-light">Services</a></li>
+          <li><a href="#" class="text-light">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4 mb-3">
+        <h5>Follow Us</h5>
+        <p>
+          <a href="#" class="text-light me-2"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-light me-2"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="text-light me-2"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-light"><i class="bi bi-linkedin"></i></a>
+        </p>
+      </div>
+    </div>
+    <div class="text-center mt-3">
+      <p>&copy; 2024 Sustain 3D. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
 
+<script src="../static/js/offcanvas.js"></script>
 
-        <!--Licencias-->
-    <!--Main-->
-    <!--Footer-->
+  
+
 </body>
 </html>
