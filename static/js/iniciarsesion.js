@@ -34,20 +34,29 @@ function showRegisterForm() {
   registerTab.classList.add('active');
 }
 
+// Función para mostrar la alerta
+function showAlert(alertId) {
+  const alertElement = document.getElementById(alertId);
+  alertElement.style.display = 'block';
+  setTimeout(() => {
+    alertElement.style.display = 'none';
+  }, 5000);
+}
+
 // Eventos de cierre
 closeModal.addEventListener('click', hideModal);
-confirmButton.addEventListener('click', hideModal);
-confirmButton2.addEventListener('click', hideModal);
+confirmButton.addEventListener('click', () => {
+  hideModal();
+  showAlert('loginAlert');
+});
+confirmButton2.addEventListener('click', () => {
+  hideModal();
+  showAlert('registerAlert');
+});
 
 // Eventos de cambio de formulario
 loginTab.addEventListener('click', showLoginForm);
 registerTab.addEventListener('click', showRegisterForm);
-/*
-// Ejemplo: Mostrar el modal en un evento específico
-document.addEventListener('DOMContentLoaded', () => {
-  setTimeout(showModal, 1000); // Mostrar el modal después de 1 segundo
-});*/
-
 
 let asklogin=false;
 document.addEventListener("scroll", function() {

@@ -325,7 +325,7 @@
             <label for="message" class="form-label">Message</label>
             <textarea class="form-control" id="message" rows="4" required></textarea>
           </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" class="btn btn-primary" >Submit</button>
         </form>
       </div>
     </div>
@@ -440,26 +440,42 @@
   
   <div class="offcanvas offcanvas-start bg-dark text-light" tabindex="-1" id="offcanvasChat" aria-labelledby="offcanvasChatLabel" style="top: 120px;">
     <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="offcanvasChatLabel">Chat with AI</h5>
+      <h5 class="offcanvas-title" id="offcanvasChatLabel">Sustain 3D Assistant</h5>
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body">
-      <p>Welcome to the AI chat! How can I assist you today?</p>
       <!-- Add your chat interface here -->
       
-        <h6>Chat History</h6>
-        <div class="border p-2 h-50" style="height: 200px; overflow-y: auto;">
+        <span class="badge badge-info bg-info m-3">CHAT AI</span>
+        <div class="border p-2 h-75" style="height: 200px; overflow-y: auto;">
           <!-- Chat messages will appear here -->
           <div class="text-light mb-2 text-end">
-            <strong>User:</strong> Hello!
+            <strong>User:</strong><br>
+            <span class="badge badge-primary bg-primary p-3">Hello!</span>
           </div>
           <div class="text-light mb-2">
-            <strong>AI:</strong> Hi! How can I help you today?
+            <strong>Assitant:</strong> <br>
+            <span class="badge badge-info bg-info p-3">Welcome to the AI chat! <br> How can I assist you today?</span>
+          </div>
+
+          <div class="text-light mb-2 text-end">
+            <strong>User:</strong><br>
+            <span class="badge badge-primary bg-primary p-3">What is Sustain 3D?</span>
+          </div>
+          <div class="text-light mb-2">
+            <strong>Assitant:</strong> <br>
+            <span class="badge badge-info bg-info p-3">Sustain 3D is a startup that is <br> dedicated to plastic collection and recycling.<br> We sell 3D products made from plastic.</span>
+          </div>
+          <div class="text-light mb-2">
+            
+            <span class="badge badge-info bg-info p-3">Do you want to know more about our<br> projects or our sustainability plan?</span>
           </div>
         </div>
 
-        <div class="mb-3">
-          <label for="chatInput" class="form-label">Your Message</label>
+        
+
+        <div class="mb-3 mt-3">
+          
           <textarea class="form-control" id="chatInput" rows="3" placeholder="Type your message here..."></textarea>
         </div>
         <button type="button" class="btn btn-primary">Send</button>
@@ -467,6 +483,14 @@
       </div>
     </div>
   </div>
+</div>
+
+<!--Alert inicio sesion-->
+<div id="loginAlert" class="alert alert-success position-fixed top-0 start-50 translate-middle-x" role="alert" style="display: none; z-index: 1050;">
+    Welcome! You have successfully logged in!
+</div>
+<div id="registerAlert" class="alert alert-success position-fixed top-0 start-50 translate-middle-x" role="alert" style="display: none; z-index: 1050;">
+  Welcome! You have successfully signed in!
 </div>
 
 
