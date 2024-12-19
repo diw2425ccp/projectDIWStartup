@@ -32,7 +32,7 @@ body {
   
 /* Declare heights because of positioning of img element */
 .carousel-item {
-    height: 12rem;
+    height: 32rem;
     
 }
 /*.carousel-item:nth-child(1) {
