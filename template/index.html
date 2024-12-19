@@ -15,12 +15,28 @@
     <link rel="stylesheet" href="../static/css/video.css">
     <link rel="stylesheet" href="../static/css/carrousel.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <style>
+      .carousel-item::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+        z-index: 1;
+      }
+      .carousel-item img {
+        position: relative;
+        z-index: 0;
+      }
+    </style>
 </head>
-<body>
+<body class="bg-dark text-light">
     <!--Header-->
     <!--Navbar-->
 
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" aria-label="Main navigation">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-transparent" aria-label="Main navigation">
         <div class="container-fluid">
           <div class="d-flex flex-column align-items-center text-center">
             <img class="logo w-25" src="../static/img/logo_icon.png" alt="Sustain 3D">
@@ -118,7 +134,7 @@
                 </div>
               </div>
               <div class="carousel-item bg-dark">
-                <img src="../static/img/prostetic-1273183_1920.jpg" class="d-block w-100 opacity-50" alt="...">
+                <img src="../static/img/prostetic-1273183_1920.jpg" class="d-block w-100 opacity-50 img-carrousel" alt="...">
                 <div class="container">
                   <div class="carousel-caption text-center">
                     <h1>Innovation and Technology</h1>
@@ -335,7 +351,7 @@
   <div class="container">
     <h2 class="text-center mb-5">Image Licenses</h2>
     <ul>
-      <li>Image 1: <a href="https://unsplash.com/photos/ywVgG0lDbOk" target="_blank">Nick Fewings on Unsplash</a></li>
+      <li>Image 1: <a href="https://unsplash.com/photos/ywVgG0lDbOk" target="_blank" >Nick Fewings on Unsplash</a></li>
       <li>Image 2: <a href="https://unsplash.com/photos/6QJ2-x0V1j0" target="_blank">Alexander Andrews on Unsplash</a></li>
       <li>Image 3: <a href="https://unsplash.com/photos/XsXFYFcJ0-I" target="_blank">Tom Claes on Unsplash</a></li>
       <!-- Add more image licenses as needed -->
