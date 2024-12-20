@@ -61,7 +61,7 @@ registerTab.addEventListener('click', showRegisterForm);
 let asklogin=false;
 document.addEventListener("scroll", function() {
     
-    if (window.scrollY > 200 && !asklogin) {
+    if (window.scrollY > 1000 && !asklogin) {
         asklogin=true;
         setTimeout(showModal, 1000);
     } 
