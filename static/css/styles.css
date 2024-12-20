@@ -12,15 +12,15 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(33, 37, 41, 1), rgba(33, 37, 41, 0));
+    background: linear-gradient(to bottom, rgba(33, 37, 41, 1), rgba(33, 37, 41, 0) 20%);
     z-index: 1;
-  }
-  .carousel-item img {
+}
+.carousel-item img {
     position: relative;
     z-index: 0;
-  }
+}
 
-  .carousel-caption {
+.carousel-caption {
     height: 90%;
     top: 50%; /* Centra verticalmente */
     left: 50%; /* Centra horizontalmente */
@@ -31,11 +31,10 @@
     padding: 1rem;
     color: white;
     transition: text-shadow 0.3s ease-in-out; /* Transición suave para el efecto de resplandor */
-  }
-  
-  .carousel-caption:hover {
+}
+
+.carousel-caption:hover {
     text-shadow: 0 0 15px yellow, 0 0 30px yellow; /* Efecto de iluminación amarillo */
-  }
-  
-  
-  
+}
+
+
