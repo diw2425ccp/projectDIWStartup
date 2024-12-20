@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let scrollHaciaAbajo=false;
         if (scrollY > lastScrollY) {
             
-            velocityY = -7;
+            velocityY = -2;
             scrollHaciaAbajo=true; 
         } else {
             if(scrollHaciaAbajo){
