@@ -34,8 +34,14 @@ document.addEventListener('DOMContentLoaded', () => {
             velocityY = 0;
         }
 
-        rotation += 5;
-        bottle.style.transform = `translateY(${positionY}px) rotate(${rotation}deg)`;
+        const isJugueteDeBebe = bottle.src.includes('juguete-de-bebe.png');
+        if (velocityY !== 0 && !(isJugueteDeBebe && positionY === maxY)) {
+            rotation += 5;
+        } else if (isJugueteDeBebe && positionY === maxY) {
+            rotation = 0;
+        }
+
+        bottle.style.transform = `translateY(${positionY}px) rotate(${isJugueteDeBebe && positionY === maxY ? 0 : rotation}deg)`;
 
         // Change bottle image based on scroll position
         if (scrollY < totalHeight-totalHeight / 3) {
