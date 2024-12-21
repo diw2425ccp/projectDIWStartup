@@ -38,3 +38,21 @@
 }
 
 
+/* cambiar color scroll bar*/
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #198754 rgba(33, 37, 41, 0);
+}
+
+::-webkit-scrollbar{
+    width: 1vw;
+}
+
+::-webkit-scrollbar-track{
+    background: rgba(33, 37, 41, 1);
+}
+
+::-webkit-scrollbar-thumb{
+    background: #198754;
+    border-radius: 12px;
+}
